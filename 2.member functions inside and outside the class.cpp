@@ -1,24 +1,24 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-class Rectangle {
-    int length, breadth;
-
-public:
-    void setData(int l, int b); 
-    int area() {               
-        return length * breadth;
+class rectangle
+{
+    int length,breadth;
+    public:
+    void setdata(int l,int b);
+    void area()
+    {
+        cout<<"area:"<<length*breadth<<endl;
     }
 };
-
-void Rectangle::setData(int l, int b) {
-    length = l;
-    breadth = b;
+void rectangle::setdata(int l,int b)
+{
+    length=l;
+    breadth=b;
 }
-
-int main() {
-    Rectangle r;
-    r.setData(10, 5);
-    cout << "Area: " << r.area() << endl;
+int main()
+{
+    rectangle r1;
+    r1.setdata(10,5);
+    r1.area();
     return 0;
 }
